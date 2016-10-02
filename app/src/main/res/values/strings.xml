@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">PROJECT</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_signup_acttivity">SignupActtivity</string>
+</resources>

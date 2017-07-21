@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_discription"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.shaheen_mac.project.DiscriptionActivity"
+    tools:showIn="@layout/activity_discription"
+    android:background="#ffffff">
+
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25dp"
+        android:id="@+id/itemname"
+        android:textColor="#606060"
+        android:textStyle="bold"
+        android:layout_above="@+id/descr"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="5dp" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="22dp"
+        android:textColor="#ea1f1f"
+
+        android:id="@+id/price"
+        android:textStyle="bold"
+        android:layout_above="@+id/addButton"
+        android:layout_alignEnd="@+id/web" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="22dp"
+        android:textColor="#82ab12"
+        android:id="@+id/qty"
+        android:textStyle="bold"
+        android:layout_above="@+id/addButton"
+        android:layout_alignStart="@+id/web" />
+
+    <TextView
+        android:text="Product decription is very important."
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:id="@+id/descr"
+        android:layout_marginRight="0dp"
+        android:textSize="18dp"
+        android:layout_marginLeft="50dp"
+        android:layout_above="@+id/price"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="25dp" />
+
+
+
+    <WebView
+        android:layout_width="310dp"
+        android:layout_height="260dp"
+        app:srcCompat="@drawable/load"
+        android:id="@+id/web"
+        android:layout_above="@+id/itemname"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp" />
+
+
+    <ImageButton
+        android:layout_width="80dp"
+        android:layout_height="70dp"
+        app:srcCompat="@drawable/cart"
+        android:id="@+id/addButton"
+        android:scaleType="fitCenter"
+        android:src="@drawable/cart"
+        android:background="#ffffff"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <ImageButton
+        android:layout_width="160dp"
+        android:layout_height="match_parent"
+        android:scaleType="fitCenter"
+        android:id="@+id/imageButton5"
+        android:background="?android:selectableItemBackground"
+        android:layout_gravity="right|center_vertical"
+        android:src="@drawable/vc"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="0dp"
+        android:layout_above="@+id/web"
+        android:layout_alignParentEnd="true" />
+</RelativeLayout>

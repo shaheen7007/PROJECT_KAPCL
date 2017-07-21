@@ -1,21 +1,67 @@
-<?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    android:orientation="vertical"
+    android:paddingBottom="0dp"
+    android:paddingLeft="0dp"
+    android:paddingRight="0dp"
+    android:paddingTop="0dp"
     tools:context="com.example.shaheen_mac.project.dispctivity"
-    tools:showIn="@layout/activity_dispctivity">
+    android:weightSum="2"
+    android:background="#ffffff">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:background="#e7e6e6"
+        android:text="K.A.P.C.L"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:layout_height="0dp"
+        android:layout_weight=".16"
+        android:layout_marginTop="1dp"
+        android:textColor="#5c5b5b" />
+
+
+
 
     <ListView
+        android:id="@+id/imagelist"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.64"
+        android:layout_marginTop="0dp" />
+
+    <LinearLayout
+        android:orientation="horizontal"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/listView"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentStart="true" />
-</RelativeLayout>
+        android:layout_height="0dp"
+        android:weightSum="1"
+        android:layout_weight=".2"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp">
+
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="78dp"
+            android:layout_weight=".5"
+            android:scaleType="fitCenter"
+            android:id="@+id/imageButton5"
+            android:background="?android:selectableItemBackground"
+            android:layout_gravity="right|center_vertical"
+            android:src="@drawable/vc" />
+
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_weight=".5"
+            android:layout_height="78dp"
+            android:scaleType="fitCenter"
+            android:id="@+id/imageButton4"
+            android:src="@drawable/my"
+            android:background="?android:selectableItemBackground"
+            android:layout_gravity="left|center_vertical" />
+    </LinearLayout>
+
+</LinearLayout>

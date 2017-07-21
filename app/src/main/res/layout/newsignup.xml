@@ -1,0 +1,174 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.shaheen_mac.project.SignupActtivity"
+    android:weightSum="3"
+    android:background="@drawable/bg">
+
+
+
+
+
+    <LinearLayout
+        android:id="@+id/email_login_form_form"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="2"
+        android:weightSum="1">
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <AutoCompleteTextView
+                android:id="@+id/namei"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:hint="Full Name"
+                android:inputType="text"
+                android:maxLines="1"
+                android:singleLine="true" />
+
+
+
+        </android.support.design.widget.TextInputLayout>
+
+        <AutoCompleteTextView
+            android:id="@+id/addressi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Address"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:inputType="text"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:layout_gravity="center_horizontal" />
+
+        <AutoCompleteTextView
+            android:id="@+id/pini"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:hint="Pincode"
+            android:inputType="number"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:layout_gravity="center_horizontal" />
+
+        <AutoCompleteTextView
+            android:id="@+id/emaili"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="e-mail"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:inputType="textEmailAddress"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:layout_gravity="center_horizontal" />
+
+        <AutoCompleteTextView
+            android:id="@+id/phoni"
+            android:layout_width="match_parent"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:layout_height="wrap_content"
+            android:hint="Phone Number"
+            android:maxLength="10"
+            android:inputType="number"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:layout_gravity="center_horizontal" />
+        <EditText
+            android:id="@+id/passwordi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password (min: 8 chars)"
+            android:imeActionId="@+id/login"
+            android:imeActionLabel="Done"
+            android:inputType="textPassword"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="20dp"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:layout_weight="0.05" />
+
+        <ImageButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/singupi"
+            android:onClick="onReg"
+            android:src="@drawable/b2"
+            android:background="#ffffff"
+            android:layout_weight="0.87" />
+
+
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_weight=".3"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="K.A.P.C.L"
+        android:layout_marginTop="30dp"
+        android:id="@+id/zqty"
+        android:layout_gravity="center_horizontal" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight=".7"
+        android:layout_centerVertical="true"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tvText"
+            android:layout_marginTop="0dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:text="I.D.C"
+            android:textColor="#000000"
+            android:textSize="15dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_marginTop="30dp"
+            android:layout_height="2dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toLeftOf="@id/tvText"
+            android:background="#5aae5f"
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_marginTop="30dp"
+            android:layout_height="2dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:layout_toRightOf="@id/tvText"
+            android:background="#5bae60"
+            />
+
+    </RelativeLayout>
+
+</LinearLayout>
+

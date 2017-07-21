@@ -1,0 +1,8 @@
+<resources>
+    <style name="Theme" parent="android:style/Theme" />
+    <style name="Theme.MainTheme" parent="Theme">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowBackground">@drawable/splash_img</item>
+    </style>
+</resources>
